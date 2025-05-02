@@ -72,6 +72,7 @@
 
 2.** Пример ответа от сервера:
    ```bash
+{
      "predicted_class": "dog",
      "probabilities": {
      "cat": 0.03,
