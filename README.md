@@ -61,19 +61,21 @@
 
 🎨 Streamlit-приложение: https://animal-image-classifier.streamlit.app/
 
-# 📦 Примеры использования API (curl)
+## 📦 Примеры использования API (curl)
 
-# Отправка изображения на FastAPI сервер
-curl -X POST https://your-fastapi-service.onrender.com/predict/ \
-  -H "accept: application/json" \
-  -F "file=@your_image.png"
+1.**Отправка изображения на FastAPI сервер**
+   ```bash
+   curl -X POST https://cat-dog-wild-classification.onrender.com/predict/ \
+     -H "accept: application/json" \
+     -F "file=@your_image.png"
+```
 
-# 🔁 Пример ответа от сервера:
-# {
-#   "predicted_class": "dog",
-#   "probabilities": {
-#     "cat": 0.03,
-#     "dog": 0.94,
-#     "wild": 0.03
-#   }
-# }
+2.** Пример ответа от сервера:
+   ```bash
+     "predicted_class": "dog",
+     "probabilities": {
+     "cat": 0.03,
+     "dog": 0.94,
+     "wild": 0.03
+     }
+    }
