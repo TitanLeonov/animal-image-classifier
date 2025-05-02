@@ -6,7 +6,7 @@
 
 ## 📊 Используемый датасет
 
-Был собран кастомный датасет из трёх категорий:
+Был выбран [датасет](https://www.kaggle.com/datasets/andrewmvd/animal-faces) из трёх категорий:
 - 🐱 **Cat** – изображения домашних кошек
 - 🐶 **Dog** – изображения домашних собак
 - 🐯 **Wild** – изображения диких животных (львы, тигры, медведи и т.д.)
@@ -22,6 +22,7 @@
 | model3 | 0.8773 | 0.8776  | 0.8774 | 7.5133 |
 | model2 | 0.6613 | 0.6901	  | 0.6576 | 7.6500 |
 
+![image](https://github.com/user-attachments/assets/afdc823a-d8d1-42cc-9135-96f78a816c6d)
 
 ## 📈 Визуализации результатов
 
@@ -38,5 +39,41 @@
 
 1. **Клонируйте репозиторий**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/TitanLeonov/animal-image-classifier.git
+   cd animal-image-classifier
+2. **Установите зависимости**:
+   ```bash
+   pip install -r requirements.txt
+
+3. **Запуск FastAPI (бэкенд):**:
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+4. **Запуск Streamlit-приложения (фронтенд):**:
+   ```bash
+   streamlit run app.py
+
+5. **Откройте приложение в браузере: http://localhost:8501 (порт 8501 установлен по умолчанию)**
+
+## 🌐 Ссылки на деплой
+
+🔗 Развёрнутый FastAPI API: https://cat-dog-wild-classification.onrender.com/docs
+
+🎨 Streamlit-приложение: https://animal-image-classifier.streamlit.app/
+
+# 📦 Примеры использования API (curl)
+
+# Отправка изображения на FastAPI сервер
+curl -X POST https://your-fastapi-service.onrender.com/predict/ \
+  -H "accept: application/json" \
+  -F "file=@your_image.png"
+
+# 🔁 Пример ответа от сервера:
+# {
+#   "predicted_class": "dog",
+#   "probabilities": {
+#     "cat": 0.03,
+#     "dog": 0.94,
+#     "wild": 0.03
+#   }
+# }
