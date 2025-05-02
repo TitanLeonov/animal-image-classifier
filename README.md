@@ -27,11 +27,12 @@
 
 Пример распределения вероятностей предсказания модели:
 
-![Пример графика](https://via.placeholder.com/600x300?text=Probability+Distribution)
+![image](https://github.com/user-attachments/assets/be2a87df-e847-41ff-9dfb-86f6ceda02a3)
 
 Пример изображения, классифицированного моделью:
 
-![Пример изображения](https://via.placeholder.com/200x200?text=Your+Image+Here)
+![image](https://github.com/user-attachments/assets/a31be53d-6013-4caf-8928-136c3e2bfc9a)
+
 
 ## 🛠️ Инструкции по локальному развертыванию
 
